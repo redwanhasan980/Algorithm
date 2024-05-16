@@ -35,7 +35,7 @@ int main()
     int j = 0;
     while (i < n)
     {
-        if (str[i] == ptr[j])
+        if (j<m&&str[i] == ptr[j])
         {
             i++;
             j++;
@@ -50,7 +50,7 @@ int main()
         if (j == m)
         {
             cout << i - j << endl;
-            j = 0;
+          
         }
     }
     return 0;
